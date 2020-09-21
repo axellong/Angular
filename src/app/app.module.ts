@@ -8,12 +8,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { LadingPageComponent } from './lading-page/lading-page.component';
 import { LoginComponent } from './login/login.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     RegistrerComponent,
     LadingPageComponent,
-    LoginComponent
+    LoginComponent,
+
   ],
   imports: [
     BrowserModule,

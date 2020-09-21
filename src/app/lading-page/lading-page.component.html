@@ -1,1 +1,11 @@
-<h1>lading-page works!</h1>
+<div *ngIf="products.length === 0">
+    <p >
+        ho hay nada
+    </p>
+</div>
+
+<div *ngFor="let product of products">
+    <p >
+        {{product.name}}/ {{product.id}}/ {{product.id}}
+    </p>
+</div>
