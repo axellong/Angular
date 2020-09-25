@@ -1,11 +1,20 @@
-<div >
-    <p >
-        ho hay nada
-    </p>
+<div>
+    <button (click)="showHide()">
+        {{nameButon}}
+    </button>
 </div>
+<div class="body" *ngIf="status">
 
-<div *ngFor="let product of products">
-    <p >
-        existe algo
-    </p>
+    <button (click)="sendServices()">enviar</button>
+    <br>
+    <br>
+    <button (click)="cleanServices()">limpiar</button>
+
+    <div *ngFor="let product of products">
+        <p>
+            {{product.id}}
+        </p>
+    </div>
+
+
 </div>

@@ -8,14 +8,40 @@ import { ServicesService } from "../services.service";
 })
 // clase principal del componente de la logica de negocio
 export class LadingPageComponent implements OnInit {
+
+  status : Boolean = true;
   products = [];
+  info = "no hay nada";
+  nameButon: string='mostrar'
+
 
   constructor(private serviceService: ServicesService) {}
 
   ngOnInit(): void {
-    this.serviceService.getProduct("products/").subscribe((data: any[]) => {
+
+  }
+
+  sendServices(){
+    this.info="si hay datos"
+    this.serviceService.getProduct("products").subscribe((data: any[]) => {
       console.log(data);
       this.products = data;
     });
   }
+
+  cleanServices(){
+    this.products=[]
+    
+  }
+
+  showHide(){
+    this.status= !this.status;
+    if (this.status) {
+      this.nameButon = 'ocultar';  
+    }else{
+      this.nameButon = 'mostar';  
+    }
+  }
+
+  
 }

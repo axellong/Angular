@@ -14,9 +14,7 @@ import { SaleComponent } from "./sale/sale.component";
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "home", component: LadingPageComponent },
-  { path: "", redirectTo: "login", pathMatch: "full" },
   { path: "login", component: LoginComponent },
-  { path: "", redirectTo: "order", pathMatch: "full" },
   { path: "product", component: ProductComponent },
   { path: "provider", component: ProviderComponent },
   { path: "admin", component: AdminComponent},
