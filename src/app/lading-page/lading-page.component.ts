@@ -18,15 +18,15 @@ export class LadingPageComponent implements OnInit {
   constructor(private serviceService: ServicesService) {}
 
   ngOnInit(): void {
-
-  }
-
-  sendServices(){
     this.info="si hay datos"
     this.serviceService.getProduct("products").subscribe((data: any[]) => {
       console.log(data);
       this.products = data;
     });
+
+  }
+
+  sendServices(){
   }
 
   cleanServices(){
