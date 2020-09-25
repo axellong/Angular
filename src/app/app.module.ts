@@ -8,6 +8,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { LadingPageComponent } from './lading-page/lading-page.component';
 import { LoginComponent } from './login/login.component';
 import { OrderComponent } from './order/order.component';
+import { ProductComponent } from './product/product.component';
+import { ProviderComponent } from './provider/provider.component';
+import { SaleComponent } from './sale/sale.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 @NgModule({
@@ -17,6 +21,10 @@ import { OrderComponent } from './order/order.component';
     LadingPageComponent,
     LoginComponent,
     OrderComponent,
+    ProductComponent,
+    ProviderComponent,
+    SaleComponent,
+    AdminComponent,
 
   ],
   imports: [

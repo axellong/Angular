@@ -7,17 +7,14 @@ import { ServicesService } from "../services.service";
   styleUrls: ["./order.component.css"],
 })
 export class OrderComponent implements OnInit {
-  
   orders = [];
 
   constructor(private servicesService: ServicesService) {}
 
   ngOnInit(): void {
-
-    this.servicesService.getOrder("getOrder").subscribe((data: any[]) => {
+    this.servicesService.getAdmin("getUserAdmin").subscribe((data: any[]) => {
       console.log(data);
-      this.orders=data;
+      this.orders = data;
     });
-
   }
 }

@@ -24,4 +24,7 @@ export class ServicesService {
   public getUser(nameEndPoint: string) {
     return this.httpClient.get(this.REST_API_SERVER + nameEndPoint);
   }
+  public getAdmin(nameEndPoint: string) {
+    return this.httpClient.get(this.REST_API_SERVER + nameEndPoint);
+  }
 }
