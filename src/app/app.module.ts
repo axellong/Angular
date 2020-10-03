@@ -3,36 +3,44 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RegistrerComponent } from './registrer/registrer.component';
+
 import { HttpClientModule } from '@angular/common/http';
 import { LadingPageComponent } from './lading-page/lading-page.component';
-import { LoginComponent } from './login/login.component';
-import { OrderComponent } from './order/order.component';
-import { ProductComponent } from './product/product.component';
-import { ProviderComponent } from './provider/provider.component';
-import { SaleComponent } from './sale/sale.component';
-import { AdminComponent } from './admin/admin.component';
-import { HeaderComponent } from './header/header.component';
+import {HeaderComponent} from './header/header.component';
+import { RegisterComponent } from './register/register.component';
 
+// angularfirebase
+import {AngularFireModule} from '@angular/fire';
+import {AngularFireAuthModule} from '@angular/fire/auth';
+import { LoginComponent } from './login/login.component';
+
+
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBswct-WKCG3n-Eec0ithhKEdpETJM52nY",
+  authDomain: "angular-deploy-dc831.firebaseapp.com",
+  databaseURL: "https://angular-deploy-dc831.firebaseio.com",
+  projectId: "angular-deploy-dc831",
+  storageBucket: "angular-deploy-dc831.appspot.com",
+  messagingSenderId: "697454246314",
+  appId: "1:697454246314:web:1d6cf1b7504d198eb053d3",
+  measurementId: "G-B3WS5FSKPK"
+};
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegistrerComponent,
+    HeaderComponent,
     LadingPageComponent,
     LoginComponent,
-    OrderComponent,
-    ProductComponent,
-    ProviderComponent,
-    SaleComponent,
-    AdminComponent,
-    HeaderComponent,
+    RegisterComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
+    HttpClientModule, 
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,77 @@
+[33mcommit b27cd712829efa9e55f208a41af36a94fdf9d176[m[33m ([m[1;36mHEAD -> [m[1;32maxel[m[33m, [m[1;31morigin/axel[m[33m)[m
+Author: axellong <193250@ids.upchiapas.edu.mx>
+Date:   Fri Sep 25 13:03:19 2020 -0500
+
+    add header an some visula things
+
+[33mcommit aaaf91da1e220bfe2ac3eaa92f8c356e61455b67[m
+Author: axellong <193250@ids.upchiapas.edu.mx>
+Date:   Fri Sep 25 11:17:12 2020 -0500
+
+    calse pero incompleta falto integrar bootstrap
+
+[33mcommit 576aea30f1bdd3521b94a5cfcbab6545afe2b140[m
+Author: axellong <193250@ids.upchiapas.edu.mx>
+Date:   Fri Sep 25 00:03:16 2020 -0500
+
+    others components were add like admin, sale, etc. all that tomake easer the nextactivitie
+
+[33mcommit 8e98c94449c97c85d660849afb26fde93bf519c5[m
+Author: axellong <193250@ids.upchiapas.edu.mx>
+Date:   Mon Sep 21 17:27:30 2020 -0500
+
+    i add  order an i conect to the front whit backend, the onli problem was the cors of the backend
+
+[33mcommit 856898e5e9a3a45bcb8de065818fa05a46d9d742[m
+Author: axellong <193250@ids.upchiapas.edu.mx>
+Date:   Mon Sep 21 13:46:55 2020 -0500
+
+    its only the integration of how consume the api and hos show it in html
+
+[33mcommit ef8794d998b9fbacbcc7c96cf313b81c3fe09e45[m[33m ([m[1;31morigin/QA-V[m[33m, [m[1;32mQA-V[m[33m)[m
+Author: axellong <193250@ids.upchiapas.edu.mx>
+Date:   Mon Sep 14 13:09:54 2020 -0500
+
+    agrege landing page, login y modificacion de app.modules, para que se cambiara la vista
+
+[33mcommit 3c7711691524e61436687c5dd98416e5d5c6e639[m[33m ([m[1;32mmaster[m[33m)[m
+Author: axellong <193250@ids.upchiapas.edu.mx>
+Date:   Mon Sep 14 12:54:41 2020 -0500
+
+    https etc. rama equivocada
+
+[33mcommit 519968fd5c49ed97d2e30c30f103ca35bf14df73[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: axellong <193250@ids.upchiapas.edu.mx>
+Date:   Fri Sep 11 09:02:58 2020 -0500
+
+    merge whit QA-V
+
+[33mcommit 1a7808c5d41d94c0b90208e3ccdeb61d47559ebd[m
+Author: axellong <193250@ids.upchiapas.edu.mx>
+Date:   Fri Sep 11 08:50:42 2020 -0500
+
+    prueba subir a axel
+
+[33mcommit 5278df2123e869ea15aa46bc8c95e2a5f42a90c8[m
+Author: axellong <193250@ids.upchiapas.edu.mx>
+Date:   Fri Sep 11 08:38:26 2020 -0500
+
+    services added
+
+[33mcommit be8e84c832330116b50e39252f56ac4fde57e3ca[m
+Author: axellong <193250@ids.upchiapas.edu.mx>
+Date:   Fri Sep 11 08:29:23 2020 -0500
+
+    segundo commmit
+
+[33mcommit 3ad078dbf297d7ddce9ea473e773e7a1a4f41287[m
+Author: AxelRuLo <developeraxrulo@gmail.com>
+Date:   Thu Sep 10 19:24:05 2020 -0500
+
+    mi primer proyecto y commmit en angular
+
+[33mcommit 94afc95d462bc70abbb6ad26af24dd836bdb1c46[m
+Author: AxelRuLo <developeraxrulo@gmail.com>
+Date:   Thu Sep 10 19:08:15 2020 -0500
+
+    initial commit

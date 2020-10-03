@@ -3,8 +3,32 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
-};
+  production: false,
+//   <!-- The core Firebase JS SDK is always required and must be listed first -->
+// <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+
+// <!-- TODO: Add SDKs for Firebase products that you want to use
+//      https://firebase.google.com/docs/web/setup#available-libraries -->
+// <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-analytics.js"></script>
+
+// <script>
+//   // Your web app's Firebase configuration
+//   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+   firebaseConfig : {
+    apiKey: "AIzaSyBswct-WKCG3n-Eec0ithhKEdpETJM52nY",
+    authDomain: "angular-deploy-dc831.firebaseapp.com",
+    databaseURL: "https://angular-deploy-dc831.firebaseio.com",
+    projectId: "angular-deploy-dc831",
+    storageBucket: "angular-deploy-dc831.appspot.com",
+    messagingSenderId: "697454246314",
+    appId: "1:697454246314:web:1d6cf1b7504d198eb053d3",
+    measurementId: "G-B3WS5FSKPK"
+  }
+  // Initialize Firebase
+//   firebase.initializeApp(firebaseConfig);
+//   firebase.analytics();
+// // </script>
+}
 
 /*
  * For easier debugging in development mode, you can import the following file

@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "angular-deploy-dc831"
+  },
+  "targets": {
+    "angular-deploy-dc831": {
+      "hosting": {
+        "PrimerProyectoAngular": [
+          "angular-deploy-dc831"
+        ]
+      }
+    }
+  }
+}
