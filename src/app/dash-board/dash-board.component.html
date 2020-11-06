@@ -1,1 +1,110 @@
 <app-header></app-header>
+<br><br>
+
+<mat-card  class="options">
+<table style="margin-right: 35%;" mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="nombre">
+        <th mat-header-cell *matHeaderCellDef> Nombre </th>
+        <td mat-cell (click) = "obtenerid(element)" *matCellDef="let element"> {{element.nombre}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef> Email </th>
+        <td mat-cell (click) = "obtenerid(element)" *matCellDef="let element"> {{element.email}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="edad">
+        <th mat-header-cell *matHeaderCellDef> Edad </th>
+        <td mat-cell (click) = "obtenerid(element)" *matCellDef="let element"> {{element.edad}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> id </th>
+        <td mat-cell (click) = "obtenerid(element)" *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+</table>
+</mat-card>
+
+<mat-card  class="options">
+
+
+    <button class="button" mat-raised-button color="primary" (click)="agregar()">Agregar </button>
+    <button class="button" mat-raised-button color="primary" (click)="eliminar()">Eliminar</button>
+    <button class="button" mat-raised-button color="primary" (click)="modificar()">Modificar</button>
+    <br>
+    <div>
+        <div *ngIf="opcion==1">
+            <form [formGroup] ="addFormGroup">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Email</mat-label>
+                    <input matInput type="email" placeholder="Email" [required] formControlName="email">
+                </mat-form-field>
+                <br><br>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Nombre</mat-label>
+                    <input matInput type="text" placeholder="nombre" [required] formControlName="nombre">
+                </mat-form-field>
+                <br><br>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Edad</mat-label>
+                    <input matInput type="text" placeholder="edad" [required] formControlName="edad">
+                </mat-form-field>
+                <br>
+                <br>
+                <button class="button-send" mat-raised-button color="primary" (click)="agregarUsuario()">send </button>
+            </form>
+        </div>
+
+        <div *ngIf="opcion==2">
+            <form [formGroup] ="modifiedFormGroup">
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>id a modificar</mat-label>
+                    <input matInput type="number" placeholder="id" formControlName="id">
+                </mat-form-field>
+                <br><br>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Email nuevo</mat-label>
+                    <input matInput type="email" placeholder="Email" formControlName="email">
+                </mat-form-field>
+                <br><br>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Nombre nuevo</mat-label>
+                    <input matInput type="text" placeholder="nombre" formControlName="nombre">
+                </mat-form-field>
+                <br><br>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Edad nueva</mat-label>
+                    <input matInput type="number" placeholder="edad" formControlName="edad">
+                </mat-form-field>
+                <br>
+                <button class="button-send" mat-raised-button color="primary" (click)="updateUsuario()">send </button>
+            </form>
+        </div>
+
+        <div style="color: red;" *ngIf="opcion==3" >
+            <form [formGroup] ="deleteFormGroup">
+            <mat-form-field class="example-full-width">
+                <mat-label>ID a eliminar</mat-label>
+                <input matInput type="number" placeholder="id" [required] formControlName="id">
+            </mat-form-field>
+            <button class="button-send" mat-raised-button color="primary" (click)="eliminarUsuario()">send </button>
+        </form>
+        </div>
+    </div>
+
+</mat-card>

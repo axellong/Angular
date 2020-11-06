@@ -1,0 +1,35 @@
+.tabla{
+    width: 100%;
+    /* border: .5px solid black; */
+    background-color: grey;
+ 
+  }
+
+
+  table {
+    width: 100%;
+  }
+
+.celdas{
+    align-items: center;
+    width: 30%;
+    border: .3px solid black;
+    text-align: center;
+    color: white;
+}
+
+.options{
+    margin-top: 40px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.button{
+    margin-left: 15%;
+}
+.button-send{
+    margin-left: 45%;
+}
+.example-full-width {
+    width: 100%;
+  }
