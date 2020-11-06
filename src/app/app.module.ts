@@ -9,11 +9,23 @@ import { LadingPageComponent } from './lading-page/lading-page.component';
 import {HeaderComponent} from './header/header.component';
 import { RegisterComponent } from './register/register.component';
 
+// formularios
+
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+
 // angularfirebase
 import {AngularFireModule} from '@angular/fire';
 import {AngularFireAuthModule} from '@angular/fire/auth';
 import { LoginComponent } from './login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// angular material
+import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { DashBoardComponent } from './dash-board/dash-board.component'
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -34,13 +46,21 @@ const firebaseConfig = {
     LadingPageComponent,
     LoginComponent,
     RegisterComponent,
+    DashBoardComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule, 
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig), BrowserAnimationsModule,
+    MatInputModule,
+    MatCardModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

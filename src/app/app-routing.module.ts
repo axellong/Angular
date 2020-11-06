@@ -4,6 +4,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { LadingPageComponent } from "./lading-page/lading-page.component";
 import { LoginComponent } from "./login/login.component";
 import { RegisterComponent } from "./register/register.component";
+import {DashBoardComponent} from "./dash-board/dash-board.component";
 
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: "login", component: LoginComponent },
   { path: "lading", component: LadingPageComponent },
   { path: "register", component: RegisterComponent },
+  { path: "dash-board", component: DashBoardComponent },
 ];
 
 @NgModule({

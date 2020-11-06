@@ -1,0 +1,37 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.imgBesides{
+  position: absolute;
+  display: inline-block;
+  margin-left: 33.5%;
+  margin-top: -36.3%;
+
+  
+
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.alignemente-center {
+  width: 100%;
+}
+
+.center {
+  margin-right: 68%;
+  margin-left: 1%;
+  margin-top: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.imagen{
+  position: relative;
+  margin-top: 100%;
+  display: inline;
+}

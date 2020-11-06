@@ -11,7 +11,7 @@ export class FireauthService {
   constructor(private router: Router, private authFire: AngularFireAuth) {}
 
   async signInWhitGoogle(){
-    const result = await  this.authFire.signInWithRedirect(new auth.GoogleAuthProvider());
+    const result = await this.authFire.signInWithRedirect(new auth.GoogleAuthProvider());
     console.log(result)
     
   }
