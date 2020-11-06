@@ -7,7 +7,7 @@ import { Observable } from "rxjs";
   providedIn: "root",
 })
 export class AuthServiceService {
-  api: String = "http://localhost:8000/";
+  api: String = "https://back-web-1.herokuapp.com/";
 
   constructor(private http: HttpClient) {}
 

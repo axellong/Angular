@@ -91,7 +91,7 @@ export class DashBoardComponent implements OnInit {
 
   agregarUsuario() {
     const data = this.addFormGroup.value;
-    this._authService.agregar(data.email, data.edad, data.nombre).subscribe((access) => {
+    this._authService.agregar(data.nombre, data.edad, data.email).subscribe((access) => {
       console.log(access);
     },
     (error) => {
