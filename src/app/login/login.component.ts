@@ -23,8 +23,6 @@ export class LoginComponent implements OnInit {
       _router.navigate(["dash-board"])
       console.log("entra a dash");
       console.log(localStorage);
-      
-      
     }
   }
 

@@ -7,7 +7,8 @@ import { Observable } from "rxjs";
   providedIn: "root",
 })
 export class AuthServiceService {
-  api: String = "https://back-web-1.herokuapp.com/";
+  // api: String = "https://back-web-1.herokuapp.com/";
+  api: String = "http://127.0.0.1:8000/";
 
   constructor(private http: HttpClient) {}
 
@@ -86,5 +87,15 @@ export class AuthServiceService {
       }),
     };
     return  this.http.put(`${this.api}api/v1/profile/profileWeb_url`,{nombre,edad,email,id},httpOptions);
+  }
+
+  crearUsuario(username:String, email:String, password:String){
+    const httpOptions = {
+      headers: new HttpHeaders({
+        "Content-Type": "application/json",
+      }),
+    };
+    return  this.http.post(`${this.api}api/v1/register/`,{username,email,password},httpOptions);
+
   }
 }

@@ -1,0 +1,29 @@
+<mat-card class="center">
+
+    <form class="example-form,alignemente-center" [formGroup]="formUSer">
+
+        <mat-form-field class="example-full-width">
+            <mat-label>User</mat-label>
+            <input matInput placeholder="user" type="text" [required] formControlName="name">
+        </mat-form-field>
+        <br><br>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" placeholder="eamil" [required] formControlName="email">
+        </mat-form-field>
+        <br><br>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="Password" type="password" [required] formControlName="password">
+        </mat-form-field>
+        <br><br>
+
+
+        <button mat-flat-button class="example-full-width" color="primary" (click)="CrearUsuario()">Join</button>
+        <br><br>
+        <button mat-flat-button class="example-full-width" color="primary" routerLink="/login" >Back</button>
+        <br><br>
+    </form>
+</mat-card>

@@ -27,6 +27,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { DashBoardComponent } from './dash-board/dash-board.component'
 import {MatTableModule} from '@angular/material/table';
+import { RegistrationComponent } from './registration/registration.component';
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -48,6 +49,7 @@ const firebaseConfig = {
     LoginComponent,
     RegisterComponent,
     DashBoardComponent,
+    RegistrationComponent,
 
   ],
   imports: [

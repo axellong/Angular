@@ -2,11 +2,11 @@
 
 
 <mat-card class="center">
-<br>
+    <br>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSJ9bFAxoi2WScS3B1bb4AmdICBR7uIAs5pcQ&usqp=CAU"
         width="150px" height="150px">
     <br><br><br><br>
-    <form class="example-form,alignemente-center" [formGroup] ="loginFormGroup">
+    <form class="example-form,alignemente-center" [formGroup]="loginFormGroup">
 
         <mat-form-field class="example-full-width">
             <mat-label>User</mat-label>
@@ -20,16 +20,21 @@
         </mat-form-field>
         <br><br>
 
-        <button mat-raised-button  [disabled]="loginFormGroup.invalid" class="example-full-width" color="warn" (click)="Login()">Login</button>
+        <button mat-raised-button [disabled]="loginFormGroup.invalid" class="example-full-width" color="warn"
+            (click)="Login()">Login</button>
         <br><br><br>
     </form>
 
     <button mat-flat-button class="example-full-width" color="primary" (click)="SingIngoogle()">Login whith
         google</button>
-        <br><br>
+    <br><br>
+
+    <button mat-flat-button class="example-full-width" color="primary" routerLink="/registration">join us</button>
+    <br><br>
+
+
 </mat-card>
 
 <mat-card class="imgBesides">
     <img src="https://noticiascurazao.com/wp-content/uploads/2019/11/Tecnologia.png" width="900px">
 </mat-card>
-  
