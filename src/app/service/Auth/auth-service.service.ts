@@ -7,7 +7,8 @@ import { Observable } from "rxjs";
   providedIn: "root",
 })
 export class AuthServiceService {
-  api: String = "https://back-web-1.herokuapp.com/";
+  //api: String = "https://back-web-1.herokuapp.com/";
+  api: String = "http://web-axel.ddns.net";
   // api: String = "http://127.0.0.1:8000/";
 
   constructor(private http: HttpClient) {}
