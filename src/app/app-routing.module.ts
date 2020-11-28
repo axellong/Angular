@@ -10,6 +10,7 @@ import {DashBoardComponent} from "./dash-board/dash-board.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "login", pathMatch: "full" },
+  { path: 'registration',  redirectTo: 'registration', pathMatch: 'full' },
   { path: "login", component: LoginComponent },
   { path: "registration", component: RegistrationComponent },
   { path: "lading", component: LadingPageComponent },
